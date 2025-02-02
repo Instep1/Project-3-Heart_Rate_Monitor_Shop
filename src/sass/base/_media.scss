@@ -1,0 +1,97 @@
+@media(max-width: 991px) {
+    .header {
+        padding: 0 35px;
+    }
+    .promo {
+        &__wrapper {
+            padding: 0 35px;
+        }
+    }
+}
+@media(max-width: 767px) {
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__items {
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+            &:nth-child(3) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media(max-width: 576px) {
+    .header {
+        &__phone {
+            font-size: 15px;
+        }
+        &__official {
+            display: none;
+        }
+        .button {
+            margin-top: 5px;
+        }
+    }
+    .promo {
+        &__icons {
+            width: 100%;
+            flex-direction: column;
+            margin: 65px auto;
+            margin-bottom: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        &__icon {
+            margin-top: 13px;
+        }
+        .button_main {
+            margin: 65px auto;
+            margin-bottom: 0;
+        }
+        &__link {
+            margin: 18px auto;
+            margin-bottom: 0;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__subheader {
+            text-align: center;
+        }
+    }
+}
+@media(max-width: 320px) {
+    .header {
+        flex-direction: column;
+        &__contacts {
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__phone {
+            margin: 0 auto;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 32px;
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 20px;
+            text-align: center;
+        }
+        &__icons {
+            display: none;
+        }
+        .button_main {
+            width: 253px;
+            margin: 65px auto;
+            margin-bottom: 0;
+        }
+    }
+}
