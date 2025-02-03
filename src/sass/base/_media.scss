@@ -7,6 +7,9 @@
             padding: 0 35px;
         }
     }
+    .consultation {
+        padding-left: 35px;
+    }
 }
 @media(max-width: 767px) {
     .advantages {
@@ -27,7 +30,13 @@
 }
 @media(max-width: 576px) {
     .header {
+        flex-direction: column;
+        &__contacts {
+            margin-top: 10px;
+            text-align: center;
+        }
         &__phone {
+            margin: 0 auto;
             font-size: 15px;
         }
         &__official {
@@ -37,19 +46,29 @@
             margin-top: 5px;
         }
     }
+    .feed-form {
+        width: 260px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 15px;
+        }
+        .title_left {
+            font-size: 28px;
+        }
+    }
     .promo {
+        &__wrapper {
+            align-items: normal
+        }
         &__icons {
-            width: 100%;
-            flex-direction: column;
-            margin: 65px auto;
-            margin-bottom: 0;
-            justify-content: center;
-            align-items: center;
+            display: none;
         }
         &__icon {
             margin-top: 13px;
         }
         .button_main {
+            width: 253px;
             margin: 65px auto;
             margin-bottom: 0;
         }
@@ -58,40 +77,12 @@
             margin-bottom: 0;
         }
         &__header {
-            text-align: center;
-        }
-        &__subheader {
-            text-align: center;
-        }
-    }
-}
-@media(max-width: 320px) {
-    .header {
-        flex-direction: column;
-        &__contacts {
-            margin-top: 10px;
-            text-align: center;
-        }
-        &__phone {
-            margin: 0 auto;
-        }
-    }
-    .promo {
-        &__header {
             font-size: 32px;
             text-align: center;
         }
         &__subheader {
             font-size: 20px;
             text-align: center;
-        }
-        &__icons {
-            display: none;
-        }
-        .button_main {
-            width: 253px;
-            margin: 65px auto;
-            margin-bottom: 0;
         }
     }
 }
