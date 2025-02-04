@@ -10,6 +10,36 @@
     .consultation {
         padding-left: 35px;
     }
+    .catalog {
+        &__content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__tabs {
+            flex-wrap: wrap;
+        }
+        &__tab {
+            margin-top: 8px;
+        }
+    }
+    .feedback {
+        &__wrapper {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__descr {
+            width: 420px;
+        }
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 @media(max-width: 767px) {
     .advantages {
@@ -24,6 +54,20 @@
             }
             &:nth-child(3) {
                 margin-top: 30px;
+            }
+        }
+    }
+    .carousel {
+        &__inner {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+            .catalog-item {
+                margin-right: 9px;
             }
         }
     }
@@ -83,6 +127,32 @@
         &__subheader {
             font-size: 20px;
             text-align: center;
+        }
+    }
+    .catalog {
+        .catalog-item {
+            &__price {
+                font-size: 17px;
+            }
+        }
+    }
+    .feedback {
+        &__item {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        &__name {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            font-size: 13px;
+            text-align: center;
+            width: 200px;
         }
     }
 }

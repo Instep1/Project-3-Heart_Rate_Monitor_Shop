@@ -2,10 +2,15 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        width: 100%;
         margin: 0 auto;
+        div {
+            img {
+                width: 100%;
+            }
+        }
     }
-    .prev, .next {
+    .slick-prev, .slick-next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -17,14 +22,24 @@
             height: 50px;
         }
     }
-    .next {
+    .slick-next {
         right: -66px;
         left: auto;
     }
-    .tns-item {
-        img {
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        li {
             display: block;
-            margin: 0 auto;
+            margin-top: 10px;
+            margin-right: 12px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: black;
+            button {
+                display: none;
+            }
         }
     }
 }
