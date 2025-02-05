@@ -92,6 +92,10 @@
     }
     .feed-form {
         width: 260px;
+        &_mobile {
+            width: 176px;
+            height: 247px;
+        }
     }
     .consultation {
         &__descr {
@@ -174,5 +178,16 @@
                 height: 18px;
             }
         }
+    }
+    .modal {
+        width: 250px;
+        &_consult {
+            padding-top: 30px;
+            min-height: auto;
+            height: 414px;
+        }
+    }
+    .button_submit {
+        font-size: 12px;
     }
 }
