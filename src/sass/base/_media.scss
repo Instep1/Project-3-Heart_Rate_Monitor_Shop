@@ -155,4 +155,24 @@
             width: 200px;
         }
     }
+    .footer {
+        &__info {
+            padding: 30px;
+            width: 250px;
+            height: 230px;
+        }
+        &__addr {
+            font-size: 17px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        &__social-item {
+            width: 41px;
+            height: 39px;
+            img {
+                height: 18px;
+            }
+        }
+    }
 }
