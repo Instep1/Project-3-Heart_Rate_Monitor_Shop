@@ -181,13 +181,15 @@
     }
     .modal {
         width: 250px;
+        min-height: 460px;
         &_consult {
             padding-top: 30px;
-            min-height: auto;
-            height: 414px;
         }
     }
     .button_submit {
+        font-size: 12px;
+    }
+    label.error {
         font-size: 12px;
     }
 }
